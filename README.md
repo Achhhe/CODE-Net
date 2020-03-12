@@ -1,4 +1,4 @@
-# Image Restoration (deraining ,desnowing, and low-light enhancement)
+# Image Restoration :trumpet::trumpet::trumpet:(deraining ,desnowing, low-light enhancement and dehazing)
 
 This repository is for RDL (Image Deraining with Density Estimation by Reweighting).
 
@@ -23,13 +23,13 @@ Figure 1. Real deraining results on light, medium and heavy rain of our model, w
 * [Test](#test)
 
 * [Results](#results)
-  * [Rain Density Estimation (RDE) by Weights](#Rain Density Estimation (RDE) by Weights)
-  * [Qualitative Comparisons](#Qualitative Comparisons)
-  * [Quantitative Comparisons](#Quantitative Comparisons)
+  * [Rain Density Estimation (RDE) by Weights](#rain density estimation (rde) by weights)
+  * [Qualitative Comparisons](#qualitative comparisons)
+  * [Quantitative Comparisons](#quantitative comparisons)
 * [Extensions](#extensions)
   * [Low-level ](#low-level )
     * [Desnowing](#desnowing)
-    * [Low-light Enhancement](#Low-light Enhancement)
+    * [Low-light Enhancement](#low-light enhancement)
     * [Dehazing](#dehazing)
   * [High-level](#high-level)
 * [Acknowledgements](#acknowledgements)
@@ -124,6 +124,8 @@ On real-world images
 <img src="desnow/desnow10.gif" width = "250" height="190"  alt="haha" align=center />  
 </div>
 
+[More desnowing results](./desnow/)
+
 #### Low-light enhancement
 
 <div  align="center">    
@@ -150,7 +152,29 @@ On real-world images
 <img src="lowlight/lowlight6.gif" width = "250"   alt="haha" align=center />  
 </div>
 
+[More low-light enhancement results](./lowlight/)
+
 #### Dehazing
+
+<div  align="center">    
+<img src="dehaze/dehaze2.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze9.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze10.gif" width = "250" height="190"  alt="haha" align=center />
+</div>
+
+<div  align="center">    
+<img src="dehaze/dehaze5.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze1.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze12.gif" width = "250" height="190"  alt="haha" align=center />
+</div>
+
+<div  align="center">    
+<img src="dehaze/dehaze7.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze3.gif" width = "250" height="190"  alt="haha" align=center />
+<img src="dehaze/dehaze4.gif" width = "250" height="190"  alt="haha" align=center />
+</div>
+
+[More deshazing results](./dehaze/)
 
 ### High-level vision tasks
 
@@ -163,8 +187,7 @@ Object detection results with/without deraining. The labels and corresponding co
 <img src="high-level/hl1.png" width = "800"  alt="haha" align=center /> 
 </div>
 
-**For more investigations, please refer to our [main paper.]()   
-All of these results mainly show the eﬀectiveness of our proposed method.**
+**All of the above verify the effectiveness of our proposed method.**
 
 ## Acknowledgements
 
