@@ -87,7 +87,6 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 ### Qualitative Comparisons
 
 <div  align="center">    
-<<<<<<< HEAD
 <img src="figs/derain/rain1200.png" width = "800"  alt="haha" align=center />   
 <img src="figs/derain/rain12.jpg" width = "800"  alt="haha" align=center />    
 </div>
@@ -101,7 +100,6 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 </div>
 
 <div  align="center">    
-=======
 <img src="derain/rain1200.png" width = "800"  alt="haha" align=center />   
 <img src="derain/rain12.jpg" width = "800"  alt="haha" align=center />    
 </div>
@@ -112,7 +110,6 @@ On synthetic images
 <img src="derain/real.png" width = "800"  alt="haha" align=center />  
 </div>
  <div  align="center">
->>>>>>> 13197a791bd2dbd9c8892e8d66505cdd287b32bd
 On real-world images
 </div>
 ### Quantitative Comparisons 
@@ -145,7 +142,7 @@ On real-world images
 <img src="figs/desnow/desnow10.gif" width = "250" height="190"  alt="haha" align=center />  
 </div>
 
-[More desnowing results](.figs/desnow/)
+[More desnowing results](./figs/desnow/)
 
 #### Low-light enhancement
 
@@ -173,7 +170,7 @@ On real-world images
 <img src="figs/lowlight/lowlight6.gif" width = "250"   alt="haha" align=center />  
 </div>
 
-[More low-light enhancement results](.figs/lowlight/)
+[More low-light enhancement results](./figs/lowlight/)
 
 #### Dehazing
 
@@ -195,7 +192,7 @@ On real-world images
 <img src="figs/dehaze/dehaze4.gif" width = "250" height="190"  alt="haha" align=center />
 </div>
 
-[More deshazing results](.figs/dehaze/)
+[More deshazing results](./figs/dehaze/)
 
 ### High-level vision tasks
 
