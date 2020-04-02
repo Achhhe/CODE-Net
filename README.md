@@ -2,7 +2,7 @@
 
 This repository is for RDL (Image Deraining with Density Estimation by Reweighting).
 
-Codes will be published after acceptance. :smile:
+Codes will be published soon :smile:
 
 <div  align="center">    
 <img src="figs/derain/intro.png" width = "650"  alt="haha" align=center />   
