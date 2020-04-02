@@ -98,17 +98,6 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 <div  align="center">    
 <img src="figs/derain/real.png" width = "800"  alt="haha" align=center />  
 </div>
-
-<div  align="center">    
-<img src="figs/derain/rain1200.png" width = "800"  alt="haha" align=center />   
-<img src="figs/derain/rain12.jpg" width = "800"  alt="haha" align=center />    
-</div>
-<div  align="center">
-On synthetic images
- </div>
-<div  align="center">    
-<img src="figs/derain/real.png" width = "800"  alt="haha" align=center />  
-</div>
  <div  align="center">
 On real-world images
 </div>
