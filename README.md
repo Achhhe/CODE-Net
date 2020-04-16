@@ -59,8 +59,8 @@ Figure 2. Architecture of the proposed RDL.
 ## Train
 ### Prepare dataset
 
-We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html) as training set. For testing, two
-commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN) and [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf), and some real-world images are utilized
+We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html), and a high quality real rain dataset from [SPANet](https://stevewongv.github.io/derain-project.html) as training sets. For testing, three
+commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN), [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf) and [Testing1000](https://stevewongv.github.io/derain-project.html) and some real-world images are utilized
 
 ## Train
 
@@ -87,9 +87,8 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 ### Qualitative Comparisons
 
 <div  align="center">    
-<<<<<<< HEAD
-<img src="figs/derain/rain1200.png" width = "800"  alt="haha" align=center />   
-<img src="figs/derain/rain12.jpg" width = "800"  alt="haha" align=center />    
+<img src="figs/derain/rain1200-1.png" width = "800"  alt="haha" align=center />   
+<img src="figs/derain/rain12-1.jpg" width = "800"  alt="haha" align=center />    
 </div>
 
 <div  align="center">       
@@ -97,28 +96,18 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 </div>
 
 <div  align="center">    
-<img src="figs/derain/real.png" width = "800"  alt="haha" align=center />  
+<img src="figs/derain/real1.png" width = "800"  alt="haha" align=center />  
+<img src="figs/derain/real2.png" width = "800"  alt="haha" align=center />
 </div>
 
-<div  align="center">    
-=======
-<img src="derain/rain1200.png" width = "800"  alt="haha" align=center />   
-<img src="derain/rain12.jpg" width = "800"  alt="haha" align=center />    
+<div  align="center">       
+ On real-world images
 </div>
-<div  align="center">
-On synthetic images
- </div>
-<div  align="center">    
-<img src="derain/real.png" width = "800"  alt="haha" align=center />  
-</div>
- <div  align="center">
->>>>>>> 13197a791bd2dbd9c8892e8d66505cdd287b32bd
-On real-world images
-</div>
+
 ### Quantitative Comparisons 
 
 <div  align="center">    
-<img src="figs/derain/tables.png" width = "800"  alt="haha" align=center />   
+<img src="figs/derain/tables1.png" width = "800"  alt="haha" align=center />   
 </div>
 
 ## Extensions
@@ -145,7 +134,7 @@ On real-world images
 <img src="figs/desnow/desnow10.gif" width = "250" height="190"  alt="haha" align=center />  
 </div>
 
-[More desnowing results](.figs/desnow/)
+[More desnowing results](./figs/desnow/)
 
 #### Low-light enhancement
 
@@ -173,7 +162,7 @@ On real-world images
 <img src="figs/lowlight/lowlight6.gif" width = "250"   alt="haha" align=center />  
 </div>
 
-[More low-light enhancement results](.figs/lowlight/)
+[More low-light enhancement results](./figs/lowlight/)
 
 #### Dehazing
 
@@ -195,7 +184,7 @@ On real-world images
 <img src="figs/dehaze/dehaze4.gif" width = "250" height="190"  alt="haha" align=center />
 </div>
 
-[More deshazing results](.figs/dehaze/)
+[More deshazing results](./figs/dehaze/)
 
 ### High-level vision tasks
 
