@@ -2,7 +2,7 @@
 
 This repository is for RDL (Image Deraining with Density Estimation by Reweighting).
 
-Codes will be published after acceptance. :smile:
+Codes will be released soon :smile:
 
 <div  align="center">    
 <img src="figs/derain/intro.png" width = "650"  alt="haha" align=center />   
@@ -59,8 +59,7 @@ Figure 2. Architecture of the proposed RDL.
 ## Train
 ### Prepare dataset
 
-We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html), and a high quality real rain dataset from [SPANet](https://stevewongv.github.io/derain-project.html) as training sets. For testing, three
-commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN), [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf) and [Testing1000](https://stevewongv.github.io/derain-project.html) and some real-world images are utilized
+We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html), and a high quality real rain dataset from [SPANet](https://stevewongv.github.io/derain-project.html) as training sets. For testing, three commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN), [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf) and [Testing1000](https://stevewongv.github.io/derain-project.html) and some real-world images are utilized
 
 ## Train
 
@@ -88,7 +87,7 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 
 <div  align="center">    
 <img src="figs/derain/rain1200-1.png" width = "800"  alt="haha" align=center />   
-<img src="figs/derain/rain12-1.jpg" width = "800"  alt="haha" align=center />    
+<img src="figs/derain/rain12-1.jpg" width = "800"  alt="haha" align=center />       
 </div>
 
 <div  align="center">       
@@ -100,9 +99,10 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 <img src="figs/derain/real2.png" width = "800"  alt="haha" align=center />
 </div>
 
-<div  align="center">       
- On real-world images
+ <div  align="center">
+On real-world images
 </div>
+
 
 ### Quantitative Comparisons 
 
