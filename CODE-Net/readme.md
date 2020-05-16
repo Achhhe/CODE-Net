@@ -9,6 +9,10 @@
 
 We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html), and a high quality real rain dataset from [SPANet](https://stevewongv.github.io/derain-project.html) as training sets. For testing, three commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN), [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf) and [Testing1000](https://stevewongv.github.io/derain-project.html) and some [real-world](https://pan.baidu.com/s/1crBm7pbjXfg3MiiCDbxWzA) (psw:nhra) images are utilized
 
+## Clone
+
+`git clone https://github.com/Achhhe/CODE-Net.git --depth==1`
+
 ## Train
 
 1. Modify the configuration file  `options/train/train_sr.json`
