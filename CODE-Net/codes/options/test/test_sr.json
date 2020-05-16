@@ -1,0 +1,39 @@
+{
+"name": "myreal+test1000"
+  , "suffix": null
+  , "model": "sr"
+  , "scale": 1
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { 
+      "name": "myreal"
+      , "mode": "LR"
+      , "dataroot_LR": "/home/spl/anaconda2/envs/pth10-py36-cu10/CODE-Net/datasets/my-real"
+    },
+    "test_2": { 
+      "name": "test1000"
+      , "mode": "LRHR"
+      , "dataroot_LR": "/home/spl/anaconda2/envs/pth10-py36-cu10/CODE-Net/datasets/test1000/inp"
+      , "dataroot_HR": "/home/spl/anaconda2/envs/pth10-py36-cu10/CODE-Net/datasets/test1000/gt"
+    }
+}
+
+  , "path": {
+    "root": "/home/spl/anaconda2/envs/pth10-py36-cu10/CODE-Net"
+    , "pretrain_model_G": "/home/spl/anaconda2/envs/pth10-py36-cu10/CODE-Net/pretrained/mrdl-real.pth"
+  }
+
+  , "network_G": {
+  "which_model_G": "ms_rlcsc_net" 
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}

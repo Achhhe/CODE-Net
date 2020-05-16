@@ -1,6 +1,6 @@
 # Image Restoration :trumpet::trumpet::trumpet:(deraining ,desnowing, low-light enhancement and dehazing)
 
-This repository is for RDL (Image Deraining with Density Estimation by Reweighting).
+This repository is for CODE-Net (Single Image Deraining with Continuous Rain Density Estimation).
 
 Codes will be released soon :smile:
 
@@ -9,18 +9,12 @@ Codes will be released soon :smile:
 </div>
 
 <div  align="">    
-Figure 1. Real deraining results on light, medium and heavy rain of our model, with the density estimation in the bottom (yellow: rainy inputs; blue: deraining results).
+Figure 1. Deraining results on real images with light, medium and heavy rain (top) by SPANet (middle) and by our method (bottom).  Our method could produce more pleasant results. The rain density of each image is estimated by our method and indicated in read.
 </div>
 
 ## Contents
 
 * [Introduction](#introduction)
-
-* [Dependencies](#dependencies)
-
-* [Train](#train)
-
-* [Test](#test)
 
 * [Results](#results)
   * [Rain Density Estimation (RDE) by Weights](#rain-density-estimation-(rde)-by-weights)
@@ -32,66 +26,42 @@ Figure 1. Real deraining results on light, medium and heavy rain of our model, w
     * [Low-light Enhancement](#low-light-enhancement)
     * [Dehazing](#dehazing)
   * [High-level](#high-level)
-* [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
-The task of single image deraining is an ill-posed problem and thus very challenging even with deep learning methods. Furthermore, **the presence of non-uniform rain densities** makes the problem even harder to solve. In this paper, we propose to remove raining effects by reconstructing clean rain streaks using the framework of reweighted convolutional sparse coding (CSC). Specifically, through expressing the rain streaks by the CSC model, **the rain density can be adaptively estimated via the reweighted sparsity prior**.  Experiments on synthetic and real-world data demonstrate the superiority of our methods . In addition, **we also validate that our framework can benefit other low- and high-level vision tasks in extensions**.
-
-<br/>
+Single image deraining (SIDR) often suffers from over/under deraining due to **the nonuniformity of rain densities and the variety of raindrop scales**. In this paper, we propose a **co**ntinuous **de**nsity guided network (CODE-Net) for SIDR. Particularly, it is composed of  a rain streaks extractor and a denoiser, where the convolutional sparse coding (CSC) is exploited to filter out noises from the extracted rain streaks. Inspired by  the reweighted iterative soft-threshold for CSC, we address the problem of continuous rain density estimation by learning the weights with channel attention blocks from sparse codes. We further exploit **a multiscale strategy to depict rain streaks appearing at different scales**. Experiments on **synthetic and real-world** data demonstrate the superiority of our methods over recent state-of-the-arts, in terms of both quantitative and qualitative results. Additionally, instead of quantizing rain density with several levels, our CODE-Net can provide **continuous-valued estimations of rain densities, which is more desirable in real applications**.
 
 <div  align="center">    
 <img src="figs/rdl_net.jpg" width = "400"  alt="haha" align=center />   
 </div>
 
-<br/>
-
 <div  align="center">    
-Figure 2. Architecture of the proposed RDL.
+Figure 2. Architecture of the proposed CODE-Net.
 </div>
-
-## Dependencies
-* Python 2 (Recommend to use [Anaconda](https://www.anaconda.com/distribution/#linux))
-* [Pytorch 1.0.1](https://pytorch.org/)
-* NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
-* Python packages: pip install xxx
-
-## Train
-### Prepare dataset
-
-We use 12000 and 1800 pairs of images from [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) and [JORDER](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html), and a high quality real rain dataset from [SPANet](https://stevewongv.github.io/derain-project.html) as training sets. For testing, three commonly synthetic datasets, [Rain1200](https://github.com/hezhangsprinter/DID-MDN), [Rain12](http://openaccess.thecvf.com/content_cvpr_2016/papers/Li_Rain_Streak_Removal_CVPR_2016_paper.pdf) and [Testing1000](https://stevewongv.github.io/derain-project.html) and some real-world images are utilized
-
-## Train
-
-ToDO
-
-## Testing
-
-ToDO
 
 ## Results
 
 ### Rain Density Estimation (RDE) by Weights
 
-The rain density is estimated **without any labels** in our model, instead of training an extra network in a supervised way to classify the rain density into three categories in DID-MDN [11]. Besides, thanks to the weights, our model is capable of **estimating the rain density with continuous states**, which is more suitable for real raining scenes than algorithms only classifying rain density into limited discrete states, for instance, DID-MDN.
+The rain density is estimated **without any labels** in our model, instead of training an extra network in a supervised way to classify the rain density into three categories in DID-MDN. Besides, thanks to the weights, our model is capable of **estimating the rain density with continuous states**, which is more suitable for real raining scenes than algorithms only classifying rain density into limited discrete states, for instance, DID-MDN.
 
 <div  align="center">    
 <img src="figs/derain/rde.jpg" width = "800"  alt="haha" align=center />   
 </div>
 
 <div  align="">    
-Figure 2. A clear image (blue) and several samples (yellow) of different rain levels and corresponding RDEs.
+Figure 3. A clear image (blue) and several samples (yellow) of different rain levels and corresponding RDEs.
 </div>
 
 ### Qualitative Comparisons
 
 <div  align="center">    
-<img src="figs/derain/rain1200-1.png" width = "800"  alt="haha" align=center />   
-<img src="figs/derain/rain12-1.jpg" width = "800"  alt="haha" align=center />       
+<img src="figs/derain/rain1200.png" width = "800"  alt="haha" align=center />   
+<img src="figs/derain/rain12.jpg" width = "800"  alt="haha" align=center />       
 </div>
 
 <div  align="center">       
- On synthetic images
+ Qualitative comparisons (PSNR, SSIM) of images from Rain1200 and Rain12.
 </div>
 
 <div  align="center">    
@@ -100,14 +70,24 @@ Figure 2. A clear image (blue) and several samples (yellow) of different rain le
 </div>
 
  <div  align="center">
-On real-world images
+Qualitative comparisons of real-world images, with the corresponding RDE calculated by our method.
 </div>
+
+<div  align="center">    
+<img src="figs/derain/real5.png" width = "800"  alt="haha" align=center />  
+</div>
+
+ <div  align="center">
+More qualitative comparisons of real-world images.
+</div>
+
+**More deraining results on Rain1200/Rain12/Testing1000/RealImages  could be found in [BaiduNetdisk](https://pan.baidu.com/s/1crBm7pbjXfg3MiiCDbxWzA) (psw:nhra)**
 
 
 ### Quantitative Comparisons 
 
 <div  align="center">    
-<img src="figs/derain/tables1.png" width = "800"  alt="haha" align=center />   
+<img src="figs/derain/tables.png" width = "800"  alt="haha" align=center />   
 </div>
 
 ## Extensions
@@ -198,6 +178,3 @@ Object detection results with/without deraining. The labels and corresponding co
 </div>
 
 **All of the above verify the effectiveness of our proposed method.**
-
-## Acknowledgements
-
