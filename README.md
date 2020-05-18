@@ -1,8 +1,6 @@
-# Image Restoration :trumpet::trumpet::trumpet:(deraining ,desnowing, low-light enhancement and dehazing)
+# This repository is for CODE-Net:trumpet::trumpet::trumpet:
 
-This repository is for CODE-Net (Single Image Deraining with Continuous Rain Density Estimation).
-
-Codes will be released soon :smile:
+**Single Image Deraining with Continuous Rain Density Estimation** :smile:
 
 <div  align="center">    
 <img src="figs/derain/intro.png" width = "650"  alt="haha" align=center />   
@@ -23,8 +21,6 @@ Figure 1. Deraining results on real images with light, medium and heavy rain (to
 * [Extensions](#extensions)
   * [Low-level ](#low-level )
     * [Desnowing](#desnowing)
-    * [Low-light Enhancement](#low-light-enhancement)
-    * [Dehazing](#dehazing)
   * [High-level](#high-level)
 
 ## Introduction
@@ -98,14 +94,8 @@ More qualitative comparisons of real-world images.
 
 <div  align="center">    
 <img src="figs/desnow/desnow4.gif" width = "253"  alt="haha" align=center />
-<img src="figs/desnow/desnow5.gif" width = "250" height = "190"  alt="haha" align=center />
-<img src="figs/desnow/desnow12.gif" width = "250"  alt="haha" align=center />  
-</div>
-
-<div  align="center">    
-<img src="figs/desnow/desnow2.gif" width = "250"  alt="haha" align=center />
-<img src="figs/desnow/desnow9.gif" width = "250" alt="haha" align=center />
-<img src="figs/desnow/desnow3.gif" width = "250"  alt="haha" align=center />  
+<img src="figs/desnow/desnow2.gif" width = "250" height = "190"  alt="haha" align=center />
+<img src="figs/desnow/desnow9.gif" width = "250"  alt="haha" align=center />  
 </div>
 
 <div  align="center">    
@@ -113,58 +103,6 @@ More qualitative comparisons of real-world images.
 <img src="figs/desnow/desnow22.gif" width = "250" height = "190"  alt="haha" align=center />
 <img src="figs/desnow/desnow10.gif" width = "250" height="190"  alt="haha" align=center />  
 </div>
-
-[More desnowing results](./figs/desnow/)
-
-#### Low-light enhancement
-
-<div  align="center">    
-<img src="figs/lowlight/lowlight18.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight19.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight20.gif" width = "250"   alt="haha" align=center />  
-</div>
-
-<div  align="center">    
-<img src="figs/lowlight/lowlight8.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight3.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight9.gif" width = "250"   alt="haha" align=center />  
-</div>
-
-<div  align="center">    
-<img src="figs/lowlight/lowlight24.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight25.gif" width = "250"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight26.gif" width = "250"   alt="haha" align=center />  
-</div>
-
-<div  align="center">    
-<img src="figs/lowlight/lowlight14.gif" width = "251"   alt="haha" align=center />
-<img src="figs/lowlight/lowlight10.gif" width = "250" height="185"  alt="haha" align=center />
-<img src="figs/lowlight/lowlight6.gif" width = "250"   alt="haha" align=center />  
-</div>
-
-[More low-light enhancement results](./figs/lowlight/)
-
-#### Dehazing
-
-<div  align="center">    
-<img src="figs/dehaze/dehaze2.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze9.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze10.gif" width = "250" height="190"  alt="haha" align=center />
-</div>
-
-<div  align="center">    
-<img src="figs/dehaze/dehaze5.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze1.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze12.gif" width = "250" height="190"  alt="haha" align=center />
-</div>
-
-<div  align="center">    
-<img src="figs/dehaze/dehaze7.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze3.gif" width = "250" height="190"  alt="haha" align=center />
-<img src="figs/dehaze/dehaze4.gif" width = "250" height="190"  alt="haha" align=center />
-</div>
-
-[More deshazing results](./figs/dehaze/)
 
 ### High-level vision tasks
 
@@ -178,3 +116,4 @@ Object detection results with/without deraining. The labels and corresponding co
 </div>
 
 **All of the above verify the effectiveness of our proposed method.**
+
