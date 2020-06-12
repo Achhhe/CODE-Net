@@ -10,6 +10,15 @@
 Figure 1. Deraining results on real images with light, medium and heavy rain (top) by SPANet (middle) and by our method (bottom).  Our method could produce more pleasant results. The rain density of each image is estimated by our method and indicated in read.
 </div>
 
+```
+@article{codenet2020he,		
+  title={Single Image Deraining with Continuous Rain Density Estimation},
+  author={Jingwei He and Lei Yu and Gui-Song Xia and Wen Yang},
+  journal={arXiv preprint arXiv:2006.03190},
+  year={2020}
+} 
+```
+
 ## Contents
 
 * [Introduction](#introduction)
