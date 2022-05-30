@@ -37,7 +37,7 @@ Figure 1. Deraining results on real images with light, medium and heavy rain (to
 Single image deraining (SIDR) often suffers from over/under deraining due to **the nonuniformity of rain densities and the variety of raindrop scales**. In this paper, we propose a **co**ntinuous **de**nsity guided network (CODE-Net) for SIDR. Particularly, it is composed of  a rain streaks extractor and a denoiser, where the convolutional sparse coding (CSC) is exploited to filter out noises from the extracted rain streaks. Inspired by  the reweighted iterative soft-threshold for CSC, we address the problem of continuous rain density estimation by learning the weights with channel attention blocks from sparse codes. We further exploit **a multiscale strategy to depict rain streaks appearing at different scales**. Experiments on **synthetic and real-world** data demonstrate the superiority of our methods over recent state-of-the-arts, in terms of both quantitative and qualitative results. Additionally, instead of quantizing rain density with several levels, our CODE-Net can provide **continuous-valued estimations of rain densities, which is more desirable in real applications**.
 
 <div  align="center">    
-<img src="figs/rdl_net.jpg" width = "400"  alt="haha" align=center />   
+<img src="figs/rdl_net.jpg" width = "800"  alt="haha" align=center />   
 </div>
 
 <div  align="center">    
